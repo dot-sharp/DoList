@@ -11,12 +11,12 @@
     "scope": "/",
     "icons": [
         {
-            "src":"/todoApp/images/logo.png",
+            "src":"images/logo.png",
             "sizes":"512x512",
             "type":"image/png"
         },
         {
-            "src":"/todoApp/images/logo-away.png",
+            "src":"images/logo-away.png",
             "sizes":"512x512",
             "type":"image/png"
         }
