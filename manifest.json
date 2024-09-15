@@ -1,7 +1,7 @@
 {
     "lang": "en-us",
-    "name": "Todo List App",
-    "short_name": "Todo App",
+    "name": "Do List",
+    "short_name": "DoList",
     "description": "A simple todo list, that saves your notes locally. Keep track of your tasks and progress.",
     "start_url": "https://dolist.nl/",
     "background_color": "#101114",
