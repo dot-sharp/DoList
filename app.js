@@ -14,7 +14,7 @@ function addTodo() {
     const todoText = todoInput.value.trim();
     if(todoText.length > 0) {
         const todoObject = {
-            Text: todoText,
+            text: todoText,
             completed: false
         }
         allTodos.push(todoObject);
@@ -73,8 +73,8 @@ function deleteTodoItem(todoIndex) {
 }
 
 function saveTodos() {
-    const todoJson = JSON.stringify(allTodos);
-    localStorage.setItem("todos", todoJson);
+    const todosJson = JSON.stringify(allTodos);
+    localStorage.setItem("todos", todosJson);
 }
 
 function getTodos() {
