@@ -2,7 +2,7 @@
     --background: #101114;
     --primary-color: #1C1D20;
     --secondary-color: #4A4D57;
-    --accent-color: #40B0A6 ;
+    --accent-color: #40B0A6;
     --text-color: #F9F9F9;
 }
 
@@ -145,6 +145,10 @@ input[type="checkbox"] {
 }
 
 @media(max-width: 500px) {
+    :root {
+        --accent-color: #E1BE6A;
+    }
+
     html {
         font-size: 12pt;
     }
@@ -164,5 +168,9 @@ input[type="checkbox"] {
 
     .todo .todo-text {
         padding: 15px;
+    }
+
+    #todo-input {
+        text-align: center;
     }
 }
