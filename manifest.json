@@ -11,12 +11,12 @@
     "scope": "/",
     "icons": [
         {
-            "src":"images/logo.png",
+            "src":"/images/logo.png",
             "sizes":"512x512",
             "type":"image/png"
         },
         {
-            "src":"images/logo-away.png",
+            "src":"/images/logo-away.png",
             "sizes":"512x512",
             "type":"image/png"
         }
