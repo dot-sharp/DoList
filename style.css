@@ -2,7 +2,7 @@
     --background: #101114;
     --primary-color: #1C1D20;
     --secondary-color: #4A4D57;
-    --accent-color: #00FFC4;
+    --accent-color: #FF4040;
     --text-color: #F9F9F9;
 }
 
@@ -62,6 +62,7 @@ h1 {
 
 form {
     position: relative;
+    margin-bottom: 25px;
 }
 
 #add-button {
