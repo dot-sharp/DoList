@@ -81,3 +81,22 @@ function getTodos() {
     const todos = localStorage.getItem("todos") || "[]";
     return JSON.parse(todos);
 }
+
+
+// Dynamic favicon
+window.onload = function () {
+	const favicon = document.getElementById('favicon')
+  
+	document.addEventListener('visibilitychange', function (e) {
+	  const isPageActive = !document.hidden
+	  toggle(isPageActive)
+	})
+  
+	function toggle(isPageActive) {
+	  if (isPageActive) {
+		favicon.href = '../images/logo.png'
+	  } else {
+		favicon.href = '../images/logo-away.png'
+	  }
+	}
+}

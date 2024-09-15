@@ -1,0 +1,24 @@
+{
+    "lang": "en-us",
+    "name": "Todo List App",
+    "short_name": "Todo App",
+    "description": "A simple todo list, that saves your notes locally. Keep track of your tasks and progress.",
+    "start_url": "/",
+    "background_color": "#101114",
+    "theme_color": "#FBFBFB",
+    "orientation": "any",
+    "display": "standalone",
+    "scope": "/",
+    "icons": [
+        {
+            "src":"images/logo.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        },
+        {
+            "src":"images/logo-away.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ]
+}
