@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost"; // or the IP address of your database
-$username = "your_database_username";
-$password = "your_database_password";
-$dbname = "your_database_name";
+$servername = "rdbms.strato.de"; // or the IP address of your database
+$username = "dbu3617650";
+$password = "Str1502*!*&&";
+$dbname = "dbs13301709";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
