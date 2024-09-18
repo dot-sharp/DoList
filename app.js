@@ -43,8 +43,8 @@ const entityMap = {
     '=': '&#x3D;'
 };
   
-function escapeHtml (todoText) {
-    return String(todoText).replace(/[&<>"'`=\/]/g, function (s) {
+function escapeHtml (string) {
+    return String(string).replace(/[&<>"'`=\/]/g, function (s) {
         return entityMap[s];
     });
 }
@@ -52,8 +52,8 @@ function escapeHtml (todoText) {
 function createTodoItem(todo, todoIndex) {
     const todoId = "todo-"+todoIndex;
     const todoLI = document.createElement("li");
-    const todoText = todo.text;
-    escapeHtml();
+    todoText = escapeHtml(todo.text);
+    // const todoText = todo.text;
     todoLI.className = "todo";
     todoLI.innerHTML = `
     <input type="checkbox" id="${todoId}">
