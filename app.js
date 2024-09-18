@@ -19,7 +19,7 @@ function addTodo() {
         }
         allTodos.push(todoObject);
         updateTodoList();
-        saveTodos()
+        saveTodos();
         todoInput.value = "";
     }
 }
@@ -32,28 +32,28 @@ function updateTodoList() {
     })
 }
 
-// const entityMap = {
-//     '&': '&amp;',
-//     '<': '&lt;',
-//     '>': '&gt;',
-//     '"': '&quot;',
-//     "'": '&#39;',
-//     '/': '&#x2F;',
-//     '`': '&#x60;',
-//     '=': '&#x3D;'
-// };
+const entityMap = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+    '/': '&#x2F;',
+    '`': '&#x60;',
+    '=': '&#x3D;'
+};
   
-// function escapeHtml (string) {
-//     return String(string).replace(/[&<>"'`=\/]/g, function (s) {
-//         return entityMap[s];
-//     });
-// }
+function escapeHtml (todoText) {
+    return String(todoText).replace(/[&<>"'`=\/]/g, function (s) {
+        return entityMap[s];
+    });
+}
 
 function createTodoItem(todo, todoIndex) {
     const todoId = "todo-"+todoIndex;
     const todoLI = document.createElement("li");
-    // const todoText = escapeHtml(todo.text);
     const todoText = todo.text;
+    escapeHtml();
     todoLI.className = "todo";
     todoLI.innerHTML = `
     <input type="checkbox" id="${todoId}">
