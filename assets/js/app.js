@@ -120,9 +120,9 @@ window.onload = function () {
     // 2 of 3 .
 	function toggle(isPageActive) {
 	  if (isPageActive) {
-		favicon.href = '../images/logo.png'
+		favicon.href = '.../images/logo.png'
 	  } else {
-		favicon.href = '../images/logo-away.png'
+		favicon.href = '.../images/logo-away.png'
 	  }
 	}
 }
