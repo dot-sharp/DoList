@@ -117,7 +117,6 @@ window.onload = function () {
 	  toggle(isPageActive)
 	})
   
-    // 2 of 3 .
 	function toggle(isPageActive) {
 	  if (isPageActive) {
 		favicon.href = '.../images/logo.png'
