@@ -1,6 +1,15 @@
 const todoForm = document.querySelector('form');
 const todoInput = document.getElementById('todo-input');
 const todoListUL = document.getElementById('todo-list');
+const entityMap = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+    '/': '&#x2F;',
+    '`': '&#x60;',
+    '=': '&#x3D;'};
 
 let allTodos = getTodos();
 updateTodoList();
@@ -33,18 +42,6 @@ function updateTodoList() {
         todoListUL.append(todoItem);
     })
 }
-
-// entities to sanitize
-const entityMap = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;',
-    '/': '&#x2F;',
-    '`': '&#x60;',
-    '=': '&#x3D;'
-};
 
 // sanitize function
 function escapeHtml (string) {
