@@ -32,10 +32,27 @@ function updateTodoList() {
     })
 }
 
+const entityMap = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+    '/': '&#x2F;',
+    '`': '&#x60;',
+    '=': '&#x3D;'
+};
+  
+function escapeHtml (string) {
+    return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+        return entityMap[s];
+    });
+}
+
 function createTodoItem(todo, todoIndex) {
     const todoId = "todo-"+todoIndex;
     const todoLI = document.createElement("li");
-    const todoText = todo.text;
+    const todoText = escapeHtml(todo.text);
     todoLI.className = "todo";
     todoLI.innerHTML = `
     <input type="checkbox" id="${todoId}">
