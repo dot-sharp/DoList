@@ -1,5 +1,5 @@
-## Ignore php files
-# *.php
+## Ignore files
+CNAME
 
 ## Ignore the php directory
 #/assets/php/
