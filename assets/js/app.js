@@ -119,9 +119,9 @@ window.onload = function () {
   
 	function toggle(isPageActive) {
 	  if (isPageActive) {
-		favicon.href = '.../images/logo.png'
+		favicon.href = './assets/images/logo.png'
 	  } else {
-		favicon.href = '.../images/logo-away.png'
+		favicon.href = './assets/images/logo-away.png'
 	  }
 	}
 }
