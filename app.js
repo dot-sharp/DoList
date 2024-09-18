@@ -10,6 +10,7 @@ todoForm.addEventListener('submit', function(e) {
     addTodo();
 })
 
+// add todo
 function addTodo() {
     const todoText = todoInput.value.trim();
     if(todoText.length > 0) {
@@ -24,6 +25,7 @@ function addTodo() {
     }
 }
 
+// update todo list
 function updateTodoList() {
     todoListUL.innerHTML = "";
     allTodos.forEach((todo, todoIndex)=> {
@@ -32,6 +34,7 @@ function updateTodoList() {
     })
 }
 
+// entities to sanitize
 const entityMap = {
     '&': '&amp;',
     '<': '&lt;',
@@ -42,18 +45,19 @@ const entityMap = {
     '`': '&#x60;',
     '=': '&#x3D;'
 };
-  
+
+// sanitize function
 function escapeHtml (string) {
     return String(string).replace(/[&<>"'`=\/]/g, function (s) {
         return entityMap[s];
     });
 }
 
+// Create todo item
 function createTodoItem(todo, todoIndex) {
     const todoId = "todo-"+todoIndex;
     const todoLI = document.createElement("li");
     todoText = escapeHtml(todo.text);
-    // const todoText = todo.text;
     todoLI.className = "todo";
     todoLI.innerHTML = `
     <input type="checkbox" id="${todoId}">
@@ -84,17 +88,20 @@ function createTodoItem(todo, todoIndex) {
     return todoLI;
 }
 
+// delete todo item
 function deleteTodoItem(todoIndex) {
     allTodos = allTodos.filter((_, i)=> i !== todoIndex);
     saveTodos();
     updateTodoList();
 }
 
+// save todos to local storage
 function saveTodos() {
     const todosJson = JSON.stringify(allTodos);
     localStorage.setItem("todos", todosJson);
 }
 
+// get todos from local storage
 function getTodos() {
     const todos = localStorage.getItem("todos") || "[]";
     return JSON.parse(todos);
