@@ -2,4 +2,4 @@
 # *.php
 
 ## Ignore the php directory
-/assets/php/
+#/assets/php/
