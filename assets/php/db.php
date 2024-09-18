@@ -1,15 +1,29 @@
 <?php
-$servername = "rdbms.strato.de"; // or the IP address of your database
+$host = "rdbms.strato.de";  // Your host, e.g., localhost or an IP address
 $username = "dbu3617650";
 $password = "Str1502*!*&&";
 $dbname = "dbs13301709";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Create a connection
+$conn = new mysqli($host, $username, $password, $dbname);
 
-// Check connection
+// Check the connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
+
+// Sample query
+$sql = "SELECT id, name FROM users";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
 ?>
