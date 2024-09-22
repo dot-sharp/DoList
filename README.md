@@ -1,21 +1,35 @@
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add storage
+### Wprking on now
+
+- [ ] Login options
+    - [ ] Google 
+
+- [ ] Item storage
+    - [ ] account bound
+        
+- [ ] Customizations
+   - [ ] edit todo items
+
+### All planned features
+
+- [ ] Item storage
     - [x] localstorage
     - [ ] account bound
           
-- [ ] Add sanitization
+- [ ] input sanitization
     - [x] clientside
     - [ ] serverside
           
-- [ ] Add login
-    - [ ] Google
+- [ ] Login options
+    - [ ] Google 
     - [ ] email
     - [ ] more oAuth2
           
-- [ ] Add customization
+- [ ] Customizations
     - [ ] folders
+    - [ ] archive items and folders
     - [ ] labels and tags
     - [ ] priority colors
     - [ ] reminders
@@ -29,11 +43,11 @@
         - [ ] pink
               
 - [ ] Make an app out of the site
-    - [ ] ios
-    - [ ] watchos
-    - [ ] macos
-    - [ ] android
-    - [ ] windows
+    - [ ] IphoneOS
+    - [ ] WatchOS
+    - [ ] MacOS
+    - [ ] Android
+    - [ ] Windows
           
 - [x] Add little fun stuff
     - [x] Dynamic favIcon
