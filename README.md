@@ -52,7 +52,7 @@
 - [x] Add little fun stuff
     - [x] Dynamic favIcon
 
-- [x] Add accessibility options
+- [ ] Add accessibility options
     - [ ] colorblind mode
     - [ ] dyslexia font
     - [ ] screenreader optimization
