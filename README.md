@@ -1,7 +1,7 @@
 <!-- ROADMAP -->
 ## Roadmap
 
-### Wprking on now
+### Working on now
 
 - [ ] Login options
     - [ ] Google 
