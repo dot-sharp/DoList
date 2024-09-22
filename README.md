@@ -1,6 +1,5 @@
 <!-- ROADMAP -->
 ## Roadmap
-
 ### __Working on now__
 
 - [ ] Login options
@@ -11,8 +10,9 @@
         
 - [ ] Customizations
    - [ ] edit todo items
+         
 
-### All planned features
+### __All planned features__
 
 - [ ] Item storage
     - [x] localstorage
